@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="f9d4c1b5-c1e1-46de-8cc7-5c6b5e54382b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Network/ConnectURI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Handler/UserCheck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/UserRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/UserRegistration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/UserRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handler/UserRegistration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/UserChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/UserChat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Network/ConnectURI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Network/ConnectURI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,17 +36,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
+    "Project.color": "440fff",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/bistique/AndroidStudioProjects/PHBS",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "build.tools"
+    "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
   <component name="RunManager">

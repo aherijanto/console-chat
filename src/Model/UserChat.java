@@ -15,13 +15,10 @@ public class UserChat {
     public String get_passwd() {
         return _passwd;
     }
-
     private String _passwd;
 
     public UserChat(){
-
     }
-
     public UserChat(String email, String name, String pwd){
         this._email = email;
         this._name = name;
