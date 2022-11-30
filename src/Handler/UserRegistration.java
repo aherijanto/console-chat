@@ -1,4 +1,4 @@
-package Main;
+package Handler;
 
 import Model.UserChat;
 import org.json.JSONArray;
@@ -16,8 +16,6 @@ public class UserRegistration {
 
     public String ConvertToJSON(){
         JSONArray jsonUser= new JSONArray();
-
-        //for(int u=0;u<_studentTI.size();u++){
         JSONObject myJObject = new JSONObject();
         myJObject.put("email",t_user.get_email());
         myJObject.put("name",t_user.get_name());

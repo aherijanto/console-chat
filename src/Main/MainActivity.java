@@ -1,7 +1,7 @@
 package Main;
-
+import Handler.UserCheck;
+import Handler.UserRegistration;
 import Network.ConnectURI;
-
 import java.io.IOException;
 import java.net.URL;
 import java.util.Scanner;
@@ -10,6 +10,7 @@ public class MainActivity {
     private static void ShowMenu(){
         System.out.println("Please Select Option");
         System.out.println("======================");
+        System.out.println("[0] Login");
         System.out.println("[1] Register ");
         System.out.println("[2] Check User If Exist");
         System.out.println("[X] Exit");
@@ -20,15 +21,31 @@ public class MainActivity {
     }
 
     private static void RegisterUser(String x_email, String x_fullname, String x_password) throws IOException {
-        UserRegistration _myUser= new UserRegistration();
-        ShowMessage("Sending to server...");
-        _myUser.Register(x_email, x_fullname, x_password);
-        String _userData = _myUser.ConvertToJSON();
-        ConnectURI uriBuilder = new ConnectURI();
-        URL inetAddress = uriBuilder.buildURL("https://mimoapps.xyz/senang/apis/chat/register.php");
-        uriBuilder.postJSON(inetAddress,_userData);
+        UserCheck _isExist = new UserCheck(x_email);
+        Boolean userIsExist = _isExist.isEmailExist();
+        if(userIsExist){
+            ShowMessage("User Already Exist...");
+            ShowMessage("User Registration Canceled...\n");
+        }else {
+            UserRegistration _myUser = new UserRegistration();
+            ShowMessage("Sending to server...");
+            _myUser.Register(x_email, x_fullname, x_password);
+            String _userData = _myUser.ConvertToJSON();
+            ConnectURI uriBuilder = new ConnectURI();
+            URL inetAddress = uriBuilder.buildURL("https://mimoapps.xyz/senang/register/");
+            uriBuilder.postJSON(inetAddress, _userData);
+        }
     }
 
+    private static void CheckIfUserExist(String x_email) throws IOException {
+        UserCheck _isExist = new UserCheck(x_email);
+        Boolean userIsExist = _isExist.isEmailExist();
+        if(userIsExist) {
+            ShowMessage("User Already Exist...\n");
+        }else{
+            ShowMessage("User's Email Not Found...\n");
+        }
+    }
     public static void main(String[] args) {
         while(true){
             try{
@@ -56,7 +73,14 @@ public class MainActivity {
                         }
                         break;
                     case '2':
-                        System.out.println("Two");
+                        ShowMessage("\nCheck Existing User");
+                        try{
+                            Scanner check = new Scanner(System.in);
+                            System.out.print("Input Username (email) : ");
+                            String emailuser = check.nextLine();
+                            CheckIfUserExist(emailuser);
+                        }catch(Exception e){
+                        }
                         break;
                     case 'X':
                         System.out.println("Exit");
@@ -64,9 +88,7 @@ public class MainActivity {
                         break;
                 }
             }catch (Exception e){
-
             }
-
         }
     }
 }

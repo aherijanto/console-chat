@@ -12,17 +12,14 @@ import java.util.Scanner;
 
 public class ConnectURI {
     private final String USER_AGENT = "Mozilla/5.0";
-
+    public StringBuffer response;
     public static URL buildURL(String urlQuery){
         URL url=null;
-
         try {
             url = new URL(urlQuery.toString());
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
-
-        //Log.v(TAG, "Built URI " + url);
         return url;
     }
 
@@ -58,13 +55,11 @@ public class ConnectURI {
         outputStreamWriter.flush();
 
         int responseCode = con.getResponseCode();
-        System.out.println("\nSending 'POST' request to URL : " + address);
-        System.out.println("Post parameters : ");
         System.out.println("Response Code : " + responseCode);
 
         BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
         String inputLine;
-        StringBuffer response = new StringBuffer();
+        response = new StringBuffer();
 
         while ((inputLine = in.readLine()) != null) {
             response.append(inputLine);
