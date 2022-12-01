@@ -13,7 +13,7 @@ import java.util.Date;
 import java.util.Scanner;
 
 public class MainActivity {
-    static String emailprofile;
+    public static String emailprofile;
     private static void ShowMenu(){
         System.out.println("Please Select Option");
         System.out.println("======================");

@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9d4c1b5-c1e1-46de-8cc7-5c6b5e54382b" name="Changes" comment="Get Messages Done temporary">
+    <list default="true" id="f9d4c1b5-c1e1-46de-8cc7-5c6b5e54382b" name="Changes" comment="writing for prefetch user">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Handler/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handler/Messages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Profiler/prefetch" beforeDir="false" afterPath="$PROJECT_DIR$/src/Profiler/prefetch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/FileProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/FileProfile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,63 +139,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/MainActivity.java</url>
-          <line>190</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/MainActivity.java</url>
-          <line>120</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/MainActivity.java</url>
-          <line>121</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/MainActivity.java</url>
-          <line>122</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/MainActivity.java</url>
-          <line>126</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Handler/Messages.java</url>
-          <line>78</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Handler/Messages.java</url>
-          <line>79</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Handler/Messages.java</url>
-          <line>80</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Handler/Messages.java</url>
-          <line>81</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Services/MessageToJSON.java</url>
           <line>9</line>
           <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Handler/Messages.java</url>
-          <line>73</line>
-          <properties class="Handler.Messages" method="GetMessage">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

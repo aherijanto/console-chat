@@ -8,6 +8,7 @@ import java.nio.file.Paths;
 
 public class FileProfile {
     private final String directory = System.getProperty("user.dir")+"/src/Profiler/";
+    public String profile;
     public void Profiling(String x_email) {
         try {
             //Whatever the file path is.
@@ -42,8 +43,8 @@ public class FileProfile {
                 sb.append(System.lineSeparator());
                 line = br.readLine();
             }
-            String profile = sb.toString();
-            return profile;
+            profile = sb.toString();
+            return profile.trim();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
