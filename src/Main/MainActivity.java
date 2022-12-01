@@ -78,7 +78,7 @@ public class MainActivity {
         if(filePrefetch) {
 
             emailprofile = profile.ReadProfile();
-            emailprofile = emailprofile.trim();
+            //emailprofile = emailprofile.trim();
             ShowMessage("Status : You've logged as " + emailprofile);
         }else{
             ShowMessage("Status : Please Login...");
