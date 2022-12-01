@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9d4c1b5-c1e1-46de-8cc7-5c6b5e54382b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Handler/UserCheck.java" afterDir="false" />
+    <list default="true" id="f9d4c1b5-c1e1-46de-8cc7-5c6b5e54382b" name="Changes" comment="ok">
+      <change afterPath="$PROJECT_DIR$/src/Handler/UserLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Profiler/prefetch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/FileProfile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/UserToJSON.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Handler/UserRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handler/UserRegistration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/UserRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handler/UserRegistration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/UserChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/UserChat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Network/ConnectURI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Network/ConnectURI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,16 +31,20 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2IFNFLZbuUNjTLucEkZdZDGbWQW" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "Project.color": "440fff",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RunManager">
@@ -70,6 +76,14 @@
       <option name="presentableId" value="Default" />
       <updated>1669773274668</updated>
     </task>
+    <task id="LOCAL-00001" summary="ok">
+      <created>1669849908644</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669849908644</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -82,5 +96,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="ok" />
   </component>
 </project>

@@ -1,7 +1,10 @@
 package Main;
 import Handler.UserCheck;
+import Handler.UserLogin;
 import Handler.UserRegistration;
 import Network.ConnectURI;
+import Services.FileProfile;
+
 import java.io.IOException;
 import java.net.URL;
 import java.util.Scanner;
@@ -13,6 +16,7 @@ public class MainActivity {
         System.out.println("[0] Login");
         System.out.println("[1] Register ");
         System.out.println("[2] Check User If Exist");
+        System.out.println("[5] Logout");
         System.out.println("[X] Exit");
         System.out.print("Your Choice : ");
     }
@@ -29,11 +33,17 @@ public class MainActivity {
         }else {
             UserRegistration _myUser = new UserRegistration();
             ShowMessage("Sending to server...");
+
             _myUser.Register(x_email, x_fullname, x_password);
             String _userData = _myUser.ConvertToJSON();
             ConnectURI uriBuilder = new ConnectURI();
             URL inetAddress = uriBuilder.buildURL("https://mimoapps.xyz/senang/register/");
             uriBuilder.postJSON(inetAddress, _userData);
+            if(uriBuilder.response.toString().equals("failed")){
+                ShowMessage("Please input a valid email address..\n");
+            }else{
+                ShowMessage("You have been register successfully...\n");
+            }
         }
     }
 
@@ -46,14 +56,48 @@ public class MainActivity {
             ShowMessage("User's Email Not Found...\n");
         }
     }
+
+    private static void LoginToWorld(String email,String passwd) throws IOException {
+        UserLogin userLogin = new UserLogin(email,passwd);
+    }
+
+    private static void Logout(){
+        FileProfile logout = new FileProfile();
+        logout.DestroyProfile();
+    }
+
+    private static void CheckLog(){
+        FileProfile profile = new FileProfile();
+        boolean filePrefetch = profile.ProfileExist();
+        if(filePrefetch) {
+
+            String emailprofile = profile.ReadProfile();
+            ShowMessage("Status : You've logged as " + emailprofile);
+        }else{
+            ShowMessage("Status : Please Login...");
+        }
+    }
     public static void main(String[] args) {
+
         while(true){
+            CheckLog();
             try{
                 Scanner option = new Scanner(System.in);
                 ShowMenu();
                 char _yourChoice = option.next().charAt(0);
 
                 switch (_yourChoice){
+                    case '0':
+                        Scanner userLogin = new Scanner(System.in);
+                        ShowMessage("\nLogin to Server");
+                        System.out.print("Username (email) : ");
+                        String x_email = userLogin.nextLine();
+                        System.out.print("Password : ");
+                        String x_passwd = userLogin.nextLine();
+                        ShowMessage("\nProcessing Login...");
+                        LoginToWorld(x_email,x_passwd);
+                        break;
+
                     case '1':
                         ShowMessage("\nRegister User");
                         Scanner register = new Scanner(System.in);
@@ -81,6 +125,10 @@ public class MainActivity {
                             CheckIfUserExist(emailuser);
                         }catch(Exception e){
                         }
+                        break;
+                    case '5':
+                        ShowMessage("Logging Out...\n");
+                        Logout();
                         break;
                     case 'X':
                         System.out.println("Exit");

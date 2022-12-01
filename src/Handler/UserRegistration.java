@@ -9,9 +9,9 @@ public class UserRegistration {
 
     public void Register(String t_email,String t_fullname, String t_pwd){
         t_user = new UserChat(t_email,t_fullname,t_pwd);
-        System.out.println(t_user.get_email());
-        System.out.println(t_user.get_name());
-        System.out.println(t_user.get_passwd());
+//        System.out.println(t_user.get_email());
+//        System.out.println(t_user.get_name());
+//        System.out.println(t_user.get_passwd());
     }
 
     public String ConvertToJSON(){

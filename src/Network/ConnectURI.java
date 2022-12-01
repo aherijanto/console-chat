@@ -55,17 +55,17 @@ public class ConnectURI {
         outputStreamWriter.flush();
 
         int responseCode = con.getResponseCode();
-        System.out.println("Response Code : " + responseCode);
+        //System.out.println("Response Code : " + responseCode+"\n");
 
         BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
         String inputLine;
         response = new StringBuffer();
 
         while ((inputLine = in.readLine()) != null) {
-            response.append(inputLine);
+           response.append(inputLine);
         }
         in.close();
 
-        System.out.println("Responses are = "+response.toString());
+        //System.out.println("Responses are = "+response.toString());
     }
 }
