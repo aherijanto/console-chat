@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="json">
+    <archive path="/home/bistique/.m2/repository/org/json/json/20220924/json-20220924.jar" />
+  </library>
+</eclipse-userlibraries>
+

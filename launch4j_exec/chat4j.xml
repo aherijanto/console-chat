@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>console</headerType>
+  <jar>/home/bistique/IdeaProjects/Chat/bistique-chat.jar</jar>
+  <outfile>/home/bistique/IdeaProjects/Chat/exe/bistique-chat.exe</outfile>
+  <errTitle>bistique-chat-error</errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl>https://java.com</downloadUrl>
+  <supportUrl>http://mimoapps.xyz</supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest></manifest>
+  <icon></icon>
+  <classPath>
+    <mainClass>Main.MainActivity</mainClass>
+    <cp>.</cp>
+  </classPath>
+  <jre>
+    <path>%JAVA_HOME%;%PATH%</path>
+    <requiresJdk>true</requiresJdk>
+    <requires64Bit>true</requires64Bit>
+    <minVersion></minVersion>
+    <maxVersion></maxVersion>
+  </jre>
+  <versionInfo>
+    <fileVersion>1.0.0.0</fileVersion>
+    <txtFileVersion>1.0.0.0</txtFileVersion>
+    <fileDescription>Chat using console</fileDescription>
+    <copyright>bistique@mimoapps 2022</copyright>
+    <productVersion>1.0.0.0</productVersion>
+    <txtProductVersion>1.0.0.0</txtProductVersion>
+    <productName>Bistique Chat - A Console Chat</productName>
+    <companyName>Cappa Database Technologies</companyName>
+    <internalName>bistique</internalName>
+    <originalFilename>chatbistique.exe</originalFilename>
+    <trademarks></trademarks>
+    <language>ENGLISH_US</language>
+  </versionInfo>
+</launch4jConfig>

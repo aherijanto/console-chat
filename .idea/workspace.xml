@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9d4c1b5-c1e1-46de-8cc7-5c6b5e54382b" name="Changes" comment="writing for prefetch user">
+    <list default="true" id="f9d4c1b5-c1e1-46de-8cc7-5c6b5e54382b" name="Changes" comment="get Messages ok">
+      <change afterPath="$PROJECT_DIR$/Chat.eml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.userlibraries" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_remote.repositories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/json-20220924.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/json-20220924.jar.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/json-20220924.pom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/json-20220924.pom.sha1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Handler/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handler/Messages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Profiler/prefetch" beforeDir="false" afterPath="$PROJECT_DIR$/src/Profiler/prefetch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/FileProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/FileProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +26,10 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/.classpath" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/.project" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -40,6 +48,9 @@
     &quot;Project.color&quot;: &quot;440fff&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
@@ -114,7 +125,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669881397700</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="get Messages ok">
+      <created>1669889423396</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669889423396</updated>
+    </task>
+    <task id="LOCAL-00008" summary="get Messages ok">
+      <created>1669889558867</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669889558867</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -133,7 +158,8 @@
     <MESSAGE value="ok" />
     <MESSAGE value="writing for prefetch user" />
     <MESSAGE value="Get Messages Done temporary" />
-    <option name="LAST_COMMIT_MESSAGE" value="Get Messages Done temporary" />
+    <MESSAGE value="get Messages ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="get Messages ok" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

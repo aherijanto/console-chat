@@ -79,7 +79,7 @@ public class Messages {
     public Boolean GetMessage() throws IOException {
         MessageToJSON userMessage = new MessageToJSON();
         String sendCriteria = userMessage.ConvertToJSON(this.fromUser,this.toUser,this.msgDate,this.msgTime,this.msg);
-        System.out.println(sendCriteria);
+        
         ConnectURI uriBuilder = new ConnectURI();
         URL inetAddress = uriBuilder.buildURL("https://mimoapps.xyz/senang/get/");
         uriBuilder.postJSON(inetAddress,sendCriteria.toString());
@@ -107,7 +107,7 @@ public class Messages {
         for(Messages msg : messageDisplay){
             if(msg.getFromUser().equals(newProfile)) {
                 userFromTo = "You wrote :";
-                System.out.print("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"+msg.getMsgDate() + " " + msg.getMsgTime() + " " + userFromTo + "\n");
+                System.out.format("%80s",msg.getMsgDate() + " " + msg.getMsgTime() + " " + userFromTo + "\n");
                 System.out.format("%80s", msg.getMsg()+"\n\n");
                 //System.out.print("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"+msg.getMsg() + "\n\n");
             }else{
