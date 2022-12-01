@@ -115,7 +115,6 @@ public class Messages {
                 System.out.print(msg.getMsgDate() + " " + msg.getMsgTime() + " " + userFromTo + "\n");
                 System.out.print(msg.getMsg() + "\n\n");
             }
-
         }
         System.out.println("----------------------------------------------end message--------------------------------");
         System.out.println("\n");
