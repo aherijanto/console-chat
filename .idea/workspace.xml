@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9d4c1b5-c1e1-46de-8cc7-5c6b5e54382b" name="Changes" comment="get Messages ok">
-      <change afterPath="$PROJECT_DIR$/Chat.eml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chat.userlibraries" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_remote.repositories" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json-20220924.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json-20220924.jar.sha1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json-20220924.pom" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json-20220924.pom.sha1" afterDir="false" />
+    <list default="true" id="f9d4c1b5-c1e1-46de-8cc7-5c6b5e54382b" name="Changes" comment="updated to eclipse format">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chat.eml" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.eml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,9 +28,18 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/.classpath" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/.project" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Main/MainActivity.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Profiler/prefetch" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2IFNFLZbuUNjTLucEkZdZDGbWQW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -139,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669889558867</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="updated to eclipse format">
+      <created>1669906944337</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1669906944337</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -159,7 +173,8 @@
     <MESSAGE value="writing for prefetch user" />
     <MESSAGE value="Get Messages Done temporary" />
     <MESSAGE value="get Messages ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="get Messages ok" />
+    <MESSAGE value="updated to eclipse format" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated to eclipse format" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
