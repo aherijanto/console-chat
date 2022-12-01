@@ -1,4 +1,5 @@
 package Main;
+import Handler.Messages;
 import Handler.UserCheck;
 import Handler.UserLogin;
 import Handler.UserRegistration;
@@ -7,15 +8,20 @@ import Services.FileProfile;
 
 import java.io.IOException;
 import java.net.URL;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Scanner;
 
 public class MainActivity {
+    static String emailprofile;
     private static void ShowMenu(){
         System.out.println("Please Select Option");
         System.out.println("======================");
         System.out.println("[0] Login");
         System.out.println("[1] Register ");
         System.out.println("[2] Check User If Exist");
+        System.out.println("[3] Send Messages");
+        System.out.println("[4] Get Messages From User");
         System.out.println("[5] Logout");
         System.out.println("[X] Exit");
         System.out.print("Your Choice : ");
@@ -71,14 +77,56 @@ public class MainActivity {
         boolean filePrefetch = profile.ProfileExist();
         if(filePrefetch) {
 
-            String emailprofile = profile.ReadProfile();
+            emailprofile = profile.ReadProfile();
+            emailprofile = emailprofile.trim();
             ShowMessage("Status : You've logged as " + emailprofile);
         }else{
             ShowMessage("Status : Please Login...");
         }
     }
-    public static void main(String[] args) {
 
+    private static void SendMessage(String to, String msg) throws IOException {
+        Date msgDate = new Date( );
+        SimpleDateFormat formatDate =
+                new SimpleDateFormat("yyyy-MM-dd");
+
+        Date msgTime = new Date( );
+        SimpleDateFormat formatTime =
+                new SimpleDateFormat("hh:mm:ss");
+        Messages newMessage = new Messages();
+        if(emailprofile==null){
+            ShowMessage("Please login...\n");
+        }else {
+            newMessage.setToUser(to);
+            newMessage.setFromUser(emailprofile);
+            newMessage.setMsgDate(formatDate.format(msgDate));
+            newMessage.setMsgTime(formatTime.format(msgTime));
+            newMessage.setMsg(msg);
+            Boolean statusSend = newMessage.SendMessage();
+            if(statusSend){
+                ShowMessage("Message sent...\n");
+            }else{
+                ShowMessage("Failed to send...\n");
+            }
+        }
+    }
+    private static void GetMessages(String username) throws IOException {
+        Date msgDate = new Date( );
+        SimpleDateFormat formatDate =
+                new SimpleDateFormat("yyyy-MM-dd");
+
+        Date msgTime = new Date( );
+        SimpleDateFormat formatTime =
+                new SimpleDateFormat("hh:mm:ss");
+        Messages getUserMessage = new Messages();
+        getUserMessage.setFromUser(emailprofile);
+        getUserMessage.setToUser(username);
+        getUserMessage.setMsgDate(formatDate.format(msgDate));
+        getUserMessage.setMsgTime(formatTime.format(msgTime));
+        getUserMessage.setMsg("get");
+        getUserMessage.GetMessage();
+    }
+    public static void main(String[] args) {
         while(true){
             CheckLog();
             try{
@@ -125,6 +173,22 @@ public class MainActivity {
                             CheckIfUserExist(emailuser);
                         }catch(Exception e){
                         }
+                        break;
+                    case '3':
+                        ShowMessage("\nSend Message");
+                        Scanner sendMessage = new Scanner(System.in);
+                        System.out.print("To : ");
+                        String toUser = sendMessage.nextLine();
+                        System.out.print("Message : ");
+                        String msg = sendMessage.nextLine();
+                        SendMessage(toUser,msg);
+                        break;
+                    case '4':
+                        ShowMessage("\nGet Messages From Spesific User");
+                        Scanner getMessage = new Scanner(System.in);
+                        System.out.print("Type username : ");
+                        String spesificUser = getMessage.nextLine();
+                        GetMessages(spesificUser);
                         break;
                     case '5':
                         ShowMessage("Logging Out...\n");

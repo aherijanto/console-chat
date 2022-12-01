@@ -55,7 +55,7 @@ public class ConnectURI {
         outputStreamWriter.flush();
 
         int responseCode = con.getResponseCode();
-        //System.out.println("Response Code : " + responseCode+"\n");
+        System.out.println("Response Code : " + responseCode+"\n");
 
         BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
         String inputLine;
