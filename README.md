@@ -27,6 +27,12 @@ This application is in the development stage, in this version Asyncronus and Thr
 Good luck, if you have any questions, don't hesitate to collaborate by sending an email message to aherijanto@mimoapps.xyz.
 
 # Preview :
-![image](https://user-images.githubusercontent.com/24568436/205186586-737e4e08-6aaa-46d2-94ef-f4c3bb44a049.png)
+![image](https://user-images.githubusercontent.com/24568436/205186586-737e4e08-6aaa-46d2-94ef-f4c3bb44a049.png) 
+![image](https://user-images.githubusercontent.com/24568436/205188175-6dec41d4-3c05-4cf9-b4b8-323f63370a8c.png)
+![image](https://user-images.githubusercontent.com/24568436/205188515-c35c0b7f-e385-40c6-a6a5-7928c784dab3.png)
+
+
+
+
 
 
