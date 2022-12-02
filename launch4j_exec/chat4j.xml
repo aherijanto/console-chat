@@ -2,18 +2,18 @@
 <launch4jConfig>
   <dontWrapJar>false</dontWrapJar>
   <headerType>console</headerType>
-  <jar>/home/bistique/IdeaProjects/Chat/bistique-chat.jar</jar>
+  <jar>/home/bistique/IdeaProjects/Chat/bistique-chat-newupdate.jar</jar>
   <outfile>/home/bistique/IdeaProjects/Chat/exe/bistique-chat.exe</outfile>
   <errTitle>bistique-chat-error</errTitle>
   <cmdLine></cmdLine>
   <chdir>.</chdir>
   <priority>normal</priority>
-  <downloadUrl>https://java.com</downloadUrl>
+  <downloadUrl>https://www.oracle.com/java/technologies/javase/jdk19-archive-downloads.html</downloadUrl>
   <supportUrl>http://mimoapps.xyz</supportUrl>
   <stayAlive>false</stayAlive>
   <restartOnCrash>false</restartOnCrash>
   <manifest></manifest>
-  <icon></icon>
+  <icon>/home/bistique/IdeaProjects/Chat/img/icon/chat-icon.ico</icon>
   <classPath>
     <mainClass>Main.MainActivity</mainClass>
     <cp>.</cp>

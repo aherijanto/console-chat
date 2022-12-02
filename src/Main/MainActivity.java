@@ -1,4 +1,5 @@
 package Main;
+
 import Handler.Messages;
 import Handler.UserCheck;
 import Handler.UserLogin;
@@ -6,14 +7,19 @@ import Handler.UserRegistration;
 import Network.ConnectURI;
 import Services.FileProfile;
 
+import java.awt.image.BufferedImage;
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
+import javax.imageio.ImageIO;
+
 public class MainActivity {
     public static String emailprofile;
+  
     private static void ShowMenu(){
         System.out.println("Please Select Option");
         System.out.println("======================");
@@ -105,6 +111,7 @@ public class MainActivity {
             Boolean statusSend = newMessage.SendMessage();
             if(statusSend){
                 ShowMessage("Message sent...\n");
+                GetMessages(to);
             }else{
                 ShowMessage("Failed to send...\n");
             }
@@ -127,6 +134,7 @@ public class MainActivity {
         getUserMessage.GetMessage();
     }
     public static void main(String[] args) {
+    	
         while(true){
             CheckLog();
             try{
