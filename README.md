@@ -20,3 +20,8 @@ How the 'console-chat' app works:
 7. 'Exit' is to exit the 'console-chat' application.
 
 Good luck, if you have any questions, don't hesitate to collaborate by sending an email message to aherijanto@mimoapps.xyz.
+
+
+![image](https://user-images.githubusercontent.com/24568436/205186586-737e4e08-6aaa-46d2-94ef-f4c3bb44a049.png)
+
+
