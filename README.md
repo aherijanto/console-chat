@@ -3,12 +3,17 @@ The 'console-chat' application is a pilot project application built in JAVA, whi
 This application is in the development stage, in this version Asyncronus and Thread Run have not been implemented, only purely in the form of fetch and update that runs on internet bandwidth.
 
 # Installation :
+## Windows
 1. This application is intended for Windows 64 bit platforms.
 2. Make sure your PC or laptop has the latest version of JDK/JRE installed (JDK 19 is recommended).
 3. Make sure that in the C:\Program Files\ folder there is a 'Java' folder or adjust it to the JDK that has been downloaded.
 4. Download the 'console-chat_updated.zip' file to your computer.
 5. Extract the ZIP file.
 6. Enter the 'console-chat' folder, then run the 'install-bistique-chat.exe' file, follow the instructions in it.
+
+## Linux
+1. Download bistique-chat.jar
+2. Type java -jar bistique-chat.jar
 
 # Usage :
 1. If you don't have an account in the form of a registered email, please select 'Register' to register an account.
